@@ -1,0 +1,10 @@
+The platform targets small to medium networks such as campus and enterprise LANs. It uses a single measurement probe, periodic polling and a lightweight SQLite database. Large-scale data center environments would require streaming telemetry and high-throughput time-series storage, which are left as future work.
+
+Database: I am gonna be using SQLite because my project is simple, doesn't require the features that MySQL/MariaDB or PostgreSQL has, and because the time I have is limited, those other DBMSs needs some time to learn.
+SQLite is a single file with no server to install, and that one probe writing results doesn’t need what the bigger systems offer.
+
+Backend: I will be using FastAPI because it is built for JSON APIs first, and my Flutter app only needs JSON. It also checks incoming requests and writes the API documentation page automatically, and it can run many network checks at the same time. This let me write less code and spend less time on things that aren’t the point of the project.
+
+Prototype: measurements from a PC-based probe toward local devices and public servers.
+
+Planned extensions: Raspberry Pi probe and SNMP device data.

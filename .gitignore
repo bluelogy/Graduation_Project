@@ -1,0 +1,10 @@
+# Python
+.venv/
+__pycache__/
+
+# The database file
+backend/data/
+*.db
+
+# Secrets (used later, for example a Telegram bot token)
+.env
